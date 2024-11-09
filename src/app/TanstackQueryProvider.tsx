@@ -15,4 +15,5 @@ const TanstackQueryProvider: React.FC<React.PropsWithChildren> = ({
   );
 };
 
-export default TanstackQueryProvider;
+// eslint-disable-next-line react-refresh/only-export-components
+export { queryClient, TanstackQueryProvider };
