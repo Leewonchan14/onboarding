@@ -1,5 +1,5 @@
 import { queryOptions } from "@tanstack/react-query";
-import { findAll } from "..";
+import findAll from "../api/findAll";
 
 const findAllOption = queryOptions({
   queryKey: ["todos"],
