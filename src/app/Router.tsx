@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { AuthPage } from "../pages/auth";
 import { TodoPage, todoPageLoader } from "../pages/todo";
 import { MainLayout } from "../shared/layouts";
+import { queryClient } from "./TanstackQueryProvider";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <TodoPage />,
-        loader: todoPageLoader,
+        loader: todoPageLoader(queryClient),
       },
     ],
   },
