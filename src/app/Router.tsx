@@ -1,13 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
 import { AuthPage } from "../pages/auth";
-import { TodoPage } from "../pages/todo";
+import { TodoPage, todoPageLoader } from "../pages/todo";
 import { MainLayout } from "../shared/layouts";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    children: [{ element: <TodoPage /> }],
+    children: [
+      {
+        index: true,
+        element: <TodoPage />,
+        loader: todoPageLoader,
+      },
+    ],
   },
   {
     path: "/auth",
