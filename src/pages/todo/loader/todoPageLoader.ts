@@ -6,6 +6,6 @@ export default function todoPageLoader(queryClient: QueryClient) {
     const { data } = await queryClient.ensureQueryData(
       todoQueryOption.findAllOption
     );
-    return { todos: data.data };
+    return data.data;
   };
 }
