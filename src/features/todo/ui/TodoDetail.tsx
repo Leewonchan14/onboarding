@@ -3,7 +3,7 @@ import Todo from "../model/Todo";
 import { MainButton } from "../../../shared/ui";
 import TodoForm from "./TodoForm";
 
-export default function TodoDetail({ todo }: { todo: Todo }) {
+export default function TodoDetail({ todo }: { todo?: Todo }) {
   return (
     <div className="w-full flex flex-col gap-4">
       <h1 className="text-2xl font-bold">할 일 상세</h1>
@@ -12,7 +12,7 @@ export default function TodoDetail({ todo }: { todo: Todo }) {
   );
 }
 
-const Render = ({ todo }: { todo: Todo }) => {
+const Render = ({ todo }: { todo?: Todo }) => {
   const [isUpdateMode, setIsUpdateMode] = useState(false);
 
   // const { mutate: remove } = useRemoveTodo();
