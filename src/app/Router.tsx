@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { AuthPage } from "../pages/auth";
 import { TodoPage, todoPageLoader } from "../pages/todo";
+import { queryClient } from "../shared/apis";
 import { MainLayout } from "../shared/layouts";
-import { queryClient } from "./TanstackQueryProvider";
 
 const router = createBrowserRouter([
   {

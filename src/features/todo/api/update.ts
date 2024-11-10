@@ -1,5 +1,5 @@
 import { Todo } from "..";
-import api from "../../../shared/apis";
+import { api } from "../../../shared/apis";
 
 export default function update(id: string, title: string, content: string) {
   return api.request<{
