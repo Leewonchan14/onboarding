@@ -5,7 +5,7 @@ import { TanstackQueryProvider } from "./TanstackQueryProvider";
 function App() {
   return (
     <TanstackQueryProvider>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </TanstackQueryProvider>
   );
 }
