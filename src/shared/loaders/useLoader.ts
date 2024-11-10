@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import { AnyFunction, LoaderReturnType } from "./types";
+import { AnyFunction, LoaderReturnType } from "../libs";
 
 export const useLoader = <T extends AnyFunction>() => {
   const data = useLoaderData();

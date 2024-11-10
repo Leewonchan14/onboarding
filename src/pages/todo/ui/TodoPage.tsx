@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { useLoader } from "../../../shared/libs";
+import { useLoader } from "../../../shared/loaders";
 import { MainButton } from "../../../shared/ui";
 import todoPageLoader from "../loader/todoPageLoader";
 import { Todo } from "../model/Todo";
