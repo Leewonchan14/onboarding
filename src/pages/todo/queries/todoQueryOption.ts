@@ -1,9 +1,9 @@
 import { queryOptions } from "@tanstack/react-query";
-import findAll from "../api/findAll";
+import { todoApi } from "../api";
 
 const findAllOption = queryOptions({
   queryKey: ["todos"],
-  queryFn: findAll,
+  queryFn: todoApi.findAll,
   staleTime: 1000 * 60 * 5,
 });
 
