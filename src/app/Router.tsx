@@ -3,6 +3,7 @@ import { AuthPage } from "../pages/auth";
 import { TodoPage, todoPageLoader } from "../pages/todo";
 import { queryClient } from "../shared/apis";
 import { MainLayout } from "../shared/layouts";
+import { authLoader } from "../shared/loaders";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <TodoPage />,
-        loader: todoPageLoader(queryClient),
+        loader: authLoader(todoPageLoader(queryClient)),
       },
     ],
   },

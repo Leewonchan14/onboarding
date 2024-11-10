@@ -1,4 +1,4 @@
-import privatePageLoader from "./privatePageLoader";
+import authLoader from "./authLoader";
 import { useLoader } from "./useLoader";
 
-export { useLoader, privatePageLoader };
+export { authLoader, useLoader };
