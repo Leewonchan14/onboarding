@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { AuthPage } from "../pages/auth";
-import { TodoPage, todoPageLoader } from "../pages/todo";
+import { AuthPage, TodoPage, todoPageLoader } from "../pages";
 import { queryClient } from "../shared/apis";
 import { MainLayout } from "../shared/layouts";
 
