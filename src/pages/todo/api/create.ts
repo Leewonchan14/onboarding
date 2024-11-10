@@ -1,5 +1,5 @@
-import { Todo } from "..";
 import { api } from "../../../shared/apis";
+import { Todo } from "../model/Todo";
 
 export default function create(title: string, content: string) {
   return api.request<{
