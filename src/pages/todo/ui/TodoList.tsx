@@ -1,6 +1,6 @@
 import React from "react";
 import { MainButton } from "../../../shared/ui";
-import Todo from "../model/Todo";
+import { Todo } from "../model/Todo";
 
 export function TodoList({
   selectedTodo,

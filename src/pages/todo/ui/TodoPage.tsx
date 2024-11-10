@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import Todo from "../model/Todo";
+import { Todo } from "../model/Todo";
 import TodoDetail from "./TodoDetail";
 import { TodoList } from "./TodoList";
 
