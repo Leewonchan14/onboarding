@@ -1,6 +1,8 @@
 import { useCallback, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { Todo, TodoDetail, TodoList } from "../../../features/todo";
+import Todo from "../model/Todo";
+import TodoDetail from "./TodoDetail";
+import { TodoList } from "./TodoList";
 
 export default function TodoPage() {
   const { todos } = useLoaderData() as { todos: Todo[] };

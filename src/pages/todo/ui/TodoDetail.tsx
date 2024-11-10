@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Todo from "../model/Todo";
 import { MainButton } from "../../../shared/ui";
+import Todo from "../model/Todo";
 import TodoForm from "./TodoForm";
 
 export default function TodoDetail({ todo }: { todo?: Todo }) {
