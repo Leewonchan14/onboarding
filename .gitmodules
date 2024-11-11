@@ -7,3 +7,4 @@
 [submodule "legacy"]
 	path = legacy
 	url = https://github.com/Leewonchan14/onboarding.git
+	branch = not-fsd
