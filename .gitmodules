@@ -4,3 +4,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/Leewonchan14/FSD_REACT
+[submodule "legacy"]
+	path = legacy
+	url = https://github.com/Leewonchan14/onboarding.git
