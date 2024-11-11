@@ -2,3 +2,6 @@
 	path = frontend
 	url = https://github.com/Leewonchan14/onboarding
 	branch = frontend
+[submodule "backend"]
+	path = backend
+	url = https://github.com/starkoora/wanted-pre-onboarding-challenge-fe-1-api
